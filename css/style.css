@@ -1,0 +1,67 @@
+.bolinha1 {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50px;
+	position: relative;
+	
+	animation-name: bolinhas; /* Aqui eu dou o nome da animacao */
+	animation-duration: 2s; /* Tempo de duracao da animacao */
+	animation-iteration-count: infinite; /* Contagem de iteracao */
+	animation-timing-function: linear; /* Funcao de tempo da animacao */ 
+    animation-delay: 0.0s;
+}
+.bolinha2 {
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50px;
+	position: relative;
+	
+	animation-name: bolinhas; /* Aqui eu dou o nome da animacao */
+	animation-duration: 2s; /* Tempo de duracao da animacao */
+	animation-iteration-count: infinite; /* Contagem de iteracao */
+	animation-timing-function: linear; /* Funcao de tempo da animacao */ 
+	animation-delay: 0.2s;
+}
+.bolinha3 {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	border-radius: 50px;
+	position: relative;
+	
+	animation-name: bolinhas; /* Aqui eu dou o nome da animacao */
+	animation-duration: 2s; /* Tempo de duracao da animacao */
+	animation-iteration-count: infinite; /* Contagem de iteracao */
+	animation-timing-function: linear; /* Funcao de tempo da animacao */ 
+	animation-delay: 0.4s;	
+}
+
+
+
+@keyframes bolinhas {
+	0% { /* PONTO INICIAL DA ANIMACAO */
+		left: 0px; 
+		top: 0px; 
+	}
+	25% {
+		left: 200px;
+		top: 200px;
+	}
+	50% {
+		left: 200px;
+		top: 0px;
+		/*transform: rotate3d(1, 1, 1, 180deg);*/
+	}
+	75% {
+		left: 0px;
+		top: 200px;
+	}
+	100% { /* PONTO FINAL DA ANIMACAO */
+		left: 0px; 
+		top: 0px;
+	}
+}
+
+
